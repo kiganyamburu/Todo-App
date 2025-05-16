@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>My App</title>
 </head>
 <body>
-    <h1>Welcome to my App</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto libero dignissimos odio illo doloribus illum enim obcaecati excepturi dolorum repudiandae. Fugiat odit natus mollitia maiores corrupti nam accusantium minus eos.</p>
-    
+    <div class="container">
+        <h1>Tasks</h1>
+        <table>
+            <tr>
+                <th>Task</th>
+                <th>Added</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>content</td>
+                <td>Data</td>
+                <td>More</td>
+            </tr>
+        </table>
+        <form action="">
+            <input type="text" name="task" id="" placeholder="Enter a new task"/>
+            <input type="submit" value="Add Task" id="btn_add"/>
+
+        </form>
+    </div>
 </body>
 </html>
