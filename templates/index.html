@@ -34,7 +34,7 @@
 {% endfor %}
   </table>
   {% endif %}
-  <form action="/add" method="POST">
+  <form action="/" method="POST">
     {% csrf_token %}
     <input type="text" name="task" id="" placeholder="Enter a new task" />
     <input type="submit" value="Add Task" id="btn_add" />
