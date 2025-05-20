@@ -28,7 +28,7 @@ class MyTask(db.Model):
 def index():
     # Add a new task
     if request.method == 'POST':
-        current_task = request.form('content')
+        current_task = request.form['content']
         new_task = MyTask(content=current_task)
         try:
             db.session.add(new_task)
@@ -57,12 +57,7 @@ def delete(id:int):
 
 
 
-
-
-
-
-
-if __name__ in"__main__":
+if __name__ =="__main__":
     with app.app_context():
         db.create_all()
 
