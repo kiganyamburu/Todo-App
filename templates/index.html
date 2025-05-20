@@ -22,7 +22,7 @@
     </tr>
 {% for task in tasks %}
     <tr>
-      <td>{{ task.Content }}</td>
+      <td>{{ task.content }}</td>
       <td>{{ task.created.strftime("%Y-%m-%d") }}</td>
       <td>
         <a href="/delete/{{ task.id }}">Delete</a>
